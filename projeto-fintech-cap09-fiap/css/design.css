@@ -66,10 +66,14 @@ section {
     font-size: 1.6rem;
 }
 
+.btn-login {
+    width: 8rem;
+    font-size: 1.6rem;
+}
+
 .btn {
     background-image: linear-gradient(to bottom, var(--color_0), var(--color_1));
-    width: 10rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .card-1, .card-2 {
