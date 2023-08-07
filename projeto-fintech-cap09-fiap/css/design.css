@@ -4,6 +4,7 @@
 
 div>h5 {
     color: var(--color_4);
+    font-size: 2.4rem;
 }
 
 nav {
@@ -12,6 +13,7 @@ nav {
 
 .nav-item a {
     font-weight: 600;
+    font-size: 1.6rem;
 }
 
 .nav-item a:hover {
@@ -57,10 +59,17 @@ section {
     max-width: 40rem;
     /* min-width: 350px; */
     box-shadow: 1px 1px 2px #ccc;
+    font-size: 1.6rem;
+}
+
+.carousel-item p {
+    font-size: 1.6rem;
 }
 
 .btn {
     background-image: linear-gradient(to bottom, var(--color_0), var(--color_1));
+    width: 10rem;
+    font-size: 1.6rem;
 }
 
 .card-1, .card-2 {
