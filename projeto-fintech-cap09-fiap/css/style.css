@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    padding: 0;
+    /* background-image: linear-gradient(to bottom,var(--color_1), var(--color_2), var(--color_4)); */
+}
+
+:root {
+    --color_0: #06BD9B;
+    --color_1: #05A3B3;
+    --color_2: #06BD33;
+    --color_3: #0CB305;
+    --color_4: #0DA65F;
+}
+
+/* Defini os paddings left e righ em 0 */
+.container-fluid {
+    --bs-gutter-x: 0;
+}
+
+/* Header da página */
+header {
+    height: 100px;
+}
+
+nav {
+    height: 100px;
+}
+
+.fundo-nav {
+    background: linear-gradient(to bottom,var(--color_1), var(--color_2), var(--color_4));
+}
+
+.nav-item a {
+    color: white;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    color: black;
+    transition: 1s;
+}
+/* Fim da Header da página */
+
+/* Section da página */
+div>h5 {
+    color: var(--color_3);
+}
+
+main {
+    /* background-image: linear-gradient(to bottom, var(--color_0), var(--color_4), var(--color_1)); */
+}
+
+/* Formulario */
+.form-login {
+    width: 400px;
+    height: 300px;
+    box-shadow: 1px 1px 10px #ccc;
+    background-image: url(../imagens/im_cifrao.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.carrossel-geral {
+    width: 600px;
+    height: 400px;
+}
+
+.btn {
+    background: linear-gradient(to bottom, var(--color_0), var(--color_1));
+    transition: .5s;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, var(--color_3), var(--color_4));
+}
+
+
+.form-control {
+    width: 350px;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+/* Fim do Formulario */
+
+/* carrossel */
+.c-imagem {
+    height: 100%;
+}
+/* Fim do carrossel */
+
+/* cards */
+.card {
+    box-shadow: 1px 1px 10x #ccc;
+}
+
+.card-1, .card-2 {
+    background-image: linear-gradient(var(--color_0), var(--color_1));
+}
+/* Fim dos cards */
+
+
+/* Fim da Section da página */
+
+
+/* Area responsiva */
+@media(max-width: 991px) {
+    .nav-item a {
+        color: black;
+        transition: 1s;
+    }
+
+    .nav-item a:hover {
+        color: var(--color_3);
+        transition: .5s;
+    }
+
+    .form-login {
+        margin: 20px;
+    }
+}

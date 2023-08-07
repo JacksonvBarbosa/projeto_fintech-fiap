@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risen Your Money</title>
+    <!-- Chamada Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Chamada Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/design.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./imagens/favicon.ico.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Header da Página -->
+    <header class="border border-success" id="home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top py-2 mb-1 border">
+            <div class="container-fluid">
+                <a class="navbar-brand border border-success rounded-circle" href="#"><img src="./imagens/logo.com.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre a RYM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cadastre-se</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim do Header da Página -->
+
+    <!-- Main da Página  -->
+    <main class="container-fluid mb-5">
+        <!-- 1º Section -->
+        <section class="container-fluid d-flex flex-wrap align-items-center gap-4 text-center mt-5  pt-5">
+            <div class="container box-item box-item1 fundo my-3 border border-1 rounded-3">
+                <h5 class="text-center text-dark fw-bold">Acesse Sua Conta</h5>
+                <form class="d-flex flex-column align-items-center my-5 " role="search">
+                    <input class="form-control border rounded-0 border-success border-0 my-4 ps-3" type="email"
+                        placeholder="Digite seu e-mail" aria-label="Email">
+                    <input class="form-control border rounded-0 border-success border-0 mb-3 ps-3" type="password"
+                        placeholder="Senha" aria-label="Senha">
+                    <button class="btn btn-outline-success border border-0 rounded-0 text-white fw-bold"
+                        type="submit">Login</button>
+                </form>
+            </div>
+            <div id="carouselExample" class=" container carousel slide box-item box-item2 border rounded-3 my-5"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-fluid img-int" src="./imagens/carrosel/pensando.png" class="d-block w-10"
+                            alt="Boneco com a mão no queixo pensando nas finanças">
+                        <p class="text text-center fs-5 fw-bold px-3">O investimento é a semente que plantamos hoje para
+                            colhermos o
+                            sucesso
+                            amanhã. Tenha coragem, mantenha-se informado e faça escolhas inteligentes.
+                            Acredite no seu potencial e permita que o poder do investimento transforme
+                            seus sonhos em realidade!</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid img-int" src="./imagens/carrosel/Idosa_idoso.png" class="d-block w-10"
+                            alt="Desenho de umaIdosa e um Idoso Felizes">
+                        <p class="text text-center fs-5 fw-bold px-3">Nunca é tarde para investir e garantir um futuro
+                            mais próspero.
+                            Seja sábio com seu dinheiro, escolha investimentos seguros e colha os frutos da sua
+                            sabedoria financeira.
+                            Invista agora e desfrute da tranquilidade na terceira idade.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid img-int" src="./imagens/carrosel/familia_feliz.png" class="d-block w-10"
+                            alt="Uma familia de 4 pessoas um filho que está nas costas do pai e uma filha que está de braços abertos na frente deles">
+                        <p class="text text-center fs-5 fw-bold px-3">Invista em família, invista no futuro. Cultive um
+                            legado de
+                            prosperidade
+                            financeira para as gerações que virão. Com planejamento e escolhas inteligentes, construa um
+                            patrimônio
+                            sólido que sustentará e fortalecerá sua família ao longo do tempo.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev  type=" button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+        <!-- Fim da 1º Section -->
+
+
+        <!-- 2º Section -->
+        <section class=" container-fluid" id="servicos">
+            <h1 class="text-center display-5">Nossos Serviços</h1>
+            <div class="d-flex flex-wrap justify-content-around align-items-center gap-3 my-3">
+                <!-- Card 1 -->
+                <div class="card card-1 rounded-0" style="width: 18rem; height: 25rem;">
+                    <img class="img-fluid" src="./imagens//sentado_moedas.png" class="card-img-top"
+                        alt="Boneco sentado em uma pilha de moedas">
+                    <div class="card-body text-center p-0">
+                        <h5 class="card-title text-center">CDB da RYM</h5>
+                        <p class="card-text"></p>
+                        <a href="#modal_cdb" class="btn btn-primary rounded-0" data-bs-toggle="modal"
+                            data-bs-target="#modal_cdb">Mais informações</a>
+                    </div>
+                </div>
+                <!-- Card 1 -->
+                <!-- Card 2 -->
+                <div class="card card-2 rounded-0" style="width: 18rem; height: 25rem;">
+                    <img class="img-fluid" src="./imagens/Cifrao_seta.png" class="card-img-top"
+                        alt="Cifrão com seta subindo">
+                    <div class="card-body p-0 text-center">
+                        <h5 class="card-title text-center">Ações da RYM</h5>
+                        <p class="card-text"></p>
+                        <a href="#modal_acoes" class="btn btn-primary rounded-0" data-bs-toggle="modal"
+                            data-bs-target="#modal_acoes">Mais informações</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+            </div>
+        </section>
+        <!-- Fim da 2º Section -->
+
+        <!-- Article -->
+        <article class="container-fluid my-5" id="sobre">
+            <div class="container border border-3 border-success">
+                <h1 class="text-center display-5 mb-3">Sobre a RYM</h1>
+                <p class="text-center fs-5">A RYM é uma empresa de investimentos comprometida em fornecer soluções
+                    financeiras personalizadas e eficientes para seus clientes. Com uma equipe de especialistas
+                    experientes
+                    e uma abordagem centrada no cliente, estamos aqui para ajudá-lo a alcançar seus objetivos
+                    financeiros de
+                    forma segura e inteligente. Nossa filosofia se baseia na transparência, confiança e busca constante
+                    pela
+                    excelência. Oferecemos uma ampla gama de produtos e serviços de investimento, desde fundos mútuos e
+                    títulos
+                    até estratégias avançadas de gestão de portfólio. Trabalhamos em estreita colaboração com você para
+                    entender
+                    suas necessidades e criar um plano personalizado que se alinhe aos seus objetivos financeiros de
+                    curto e longo
+                    prazo. Além disso, estamos constantemente inovando e acompanhando as tendências do mercado para
+                    garantir que
+                    nossos clientes tenham acesso às melhores oportunidades de investimento. Utilizamos tecnologia
+                    avançada e
+                    análise de dados para tomar decisões embasadas e maximizar os retornos dos investimentos. Na RYM,
+                    sabemos que
+                    cada cliente é único, e nossa equipe está pronta para oferecer um atendimento personalizado,
+                    orientação
+                    especializada e suporte contínuo em todas as etapas do processo de investimento. Junte-se a nós na
+                    jornada
+                    rumo ao sucesso financeiro. Entre em contato conosco hoje mesmo e descubra como a RYM pode ajudá-lo
+                    a alcançar
+                    seus objetivos de investimento de maneira confiável e inovadora.
+                </p>
+            </div>
+        </article>
+        <!-- Article -->
+        <div class="container-fluid d-flex flex-column align-items-end">
+            <a href="#home" class="text fs-3 text-dark"><i class="bi bi-caret-up-square"></i></a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" id="modal_cdb" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">CDB</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O CDB (Certificado de Depósito Bancário) é uma opção de investimento
+                            de baixo risco e fácil acesso. Com taxas atrativas e garantia do Fundo Garantidor de
+                            Crédito, o CDB oferece segurança e rentabilidade para seu capital. Diversifique sua carteira
+                            e
+                            aproveite os benefícios desse investimento confiável.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <!-- Modal -->
+        <div class="modal" id="modal_acoes" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Açoes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>As ações são uma forma de investimento em empresas, proporcionando a
+                            oportunidade de participar dos lucros e crescimento do negócio. Com pesquisa, análise e
+                            diversificação, as ações podem gerar retornos atrativos a longo prazo. Aproveite o potencial
+                            do mercado de ações para fazer seu dinheiro trabalhar por você</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+    </main>
+    <!-- Fim do Main da Página  -->
+
+    <!-- Footer da Página -->
+    <footer class="container-fluid text-white p-2" style="height: 3rem;">
+        <p class="fw-bold text-center">Site porduzido por Jackson dos Santos Ventura RM 98553</p>
+    </footer>
+    <!-- Fim da Footer da Página -->
+
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
