@@ -23,8 +23,11 @@ public class ContaCorrente extends Conta {
 		this.chequeEspecial = chequeEspecial;
 	}
 	
+	/**
+	 * Saldo Exclusivo da Classe ContaCorrente, com taxa adicionada
+	 * */
 	public double getSaldoDisponivel() {
-		return super.getSaldo() + chequeEspecial;//Busca o saldo da conta mãe e soma ao cheque especial definido pelo banco quanto o cliente tem de saldo fora o valor liquido da conta
+		return super.getSaldo() + chequeEspecial;
 	}
 
 	// Usando POLIMORFISMO (Sobreescrita) um método de ter um mesmo método mais com parametros diferentes

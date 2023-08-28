@@ -7,7 +7,6 @@ public class Teste2 {
 		Conta conta = new Conta();
 		Conta cc = new ContaCorrente();
 		
-		
 		//Processo Processo Casting pode fazer tanto um downcating reduzir um classe de super para sub quanto ao contrário  
 		ContaCorrente c1 = (ContaCorrente) cc;
 		
@@ -15,9 +14,5 @@ public class Teste2 {
 		if (conta instanceof ContaCorrente) {
 			ContaCorrente c2 = (ContaCorrente) conta;
 		}
-		
-		
-
 	}
-
 }

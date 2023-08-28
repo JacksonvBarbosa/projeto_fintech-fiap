@@ -12,7 +12,7 @@ public class Conta implements Serializable {
 	private int agencia;
 	private double saldo;
 	
-	//chamada da Classe Cliente
+	//Criar objeto através da classe Cliente
 	Cliente cliente = new Cliente();
 	
 	//contrutor padrão 
@@ -46,7 +46,7 @@ public class Conta implements Serializable {
 	
 	/**
 	 * Verifica o Saldo da Conta
-	 * @return Valor do Saldo da Conta*/
+	 * @return Saldo da Conta*/
 	public double getSaldo() {
 		return this.saldo;
 	}
