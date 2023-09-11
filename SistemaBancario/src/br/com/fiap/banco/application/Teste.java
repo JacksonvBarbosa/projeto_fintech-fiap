@@ -10,11 +10,9 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		Conta conta = new Conta();
+		//Instâncias
 		ContaCorrente cc = new ContaCorrente();
 		ContaPoupanca cp = new ContaPoupanca();
-
-		// Instanciar Scanner
 		Scanner selecione = new Scanner(System.in);
 
 

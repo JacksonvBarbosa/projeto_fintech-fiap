@@ -11,55 +11,45 @@ public class Pessoa implements Serializable {
 	 * Especifica pessoa para essa classe especificamente
 	 * 
 	 */
+	//atributos
 	private static final long serialVersionUID = 1L;
 	private String nome;
+	private int dtNascimento;
 	private int idade;
-	private String sexo;
 	private String cpf;
-	private String email;
+	private String genero;
 	
 	
+	//Getters and Setters
 	public String getNome() {
 		return nome;
 	}
-	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+	public int getDtNascimento() {
+		return dtNascimento;
+	}
+	public void setDtNascimento(int dtNascimento) {
+		this.dtNascimento = dtNascimento;
+	}
 	public int getIdade() {
 		return idade;
 	}
-
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
-
-	public String getSexo() {
-		return sexo;
-	}
-
-	public void setSexo(String sexo) {
-		this.sexo = sexo;
-	}
-
 	public String getCpf() {
 		return cpf;
 	}
-
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
-	public String getEmail() {
-		return email;
+	public String getGenero() {
+		return genero;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
+	public void setGenero(String genero) {
+		this.genero = genero;
 	}
-
 	
-
 }
