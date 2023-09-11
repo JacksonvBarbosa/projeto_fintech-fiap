@@ -20,7 +20,6 @@ public class TesteCliente {
 		System.out.println("Dados do Cliente para o Banco de Dados da conta bancária");
 		cliente.obterDadosCliente();
 		cliente.exibirDadosCliente();
-	
 
 	}
 

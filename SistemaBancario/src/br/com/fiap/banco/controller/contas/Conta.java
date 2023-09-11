@@ -18,26 +18,23 @@ public class Conta implements Serializable {
 	//atributos
 	private int agencia;
 	private int numero;
+	private double deposito;
+	private double saque;
 	private double saldo;
 	
 	//Construtor Padrão da Classe Conta
 	public Conta() {}
 	
 	//Construtor da Classe Conta
-	
-	/*Gerei esse construtores pelo atalho botão direito ou alt+shift+s source
-	 * generate constructor using fields selecione os campos e clique
-	 * em generate no caso atual pode apagar o super que vem com o construtor*/
-	
 	public Conta(int agencia, int numero, double saldo) {
 		this.agencia = agencia;
 		this.numero = numero;
 		}
 	
+	//Getters and Setters
 	public int getAgencia() {
 		return agencia;
 	}
-
 
 	public void setAgencia(int agencia) {
 		this.agencia = agencia;
@@ -51,6 +48,22 @@ public class Conta implements Serializable {
 		this.numero = numero;
 	}
 	
+	public double getDeposito() {
+		return deposito;
+	}
+
+	public void setDeposito(double deposito) {
+		this.deposito = deposito;
+	}
+
+	public double getSaque() {
+		return saque;
+	}
+
+	public void setSaque(double saque) {
+		this.saque = saque;
+	}
+	
 	//métodos
 	void setarContaAgencia() {
 		Scanner entrada = new Scanner(System.in);
@@ -60,7 +73,6 @@ public class Conta implements Serializable {
 		System.out.println("Agencia: ");
 		int agencia = entrada.nextInt();
 		setAgencia(agencia);
-		
 	}
 	
 }

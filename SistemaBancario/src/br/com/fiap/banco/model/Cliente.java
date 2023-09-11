@@ -16,9 +16,7 @@ public class Cliente extends Pessoa {
 	//atributos
 	private int registro;
 	private String email;
-	private int telefone;
-	//private String comprovanteResidencia;
-	
+	private int telefone;	
 	
 	//Getters and Setters
 	public int getRegistro() {
@@ -39,12 +37,6 @@ public class Cliente extends Pessoa {
 	public void setTelefone(int telefone) {
 		this.telefone = telefone;
 	}
-//	public String getComprovanteResidencia() {
-//		return comprovanteResidencia;
-//	}
-//	public void setComprovanteResidencia(String comprovanteResidencia) {
-//		this.comprovanteResidencia = comprovanteResidencia;
-//	}
 	
 	//Métodos
 	public void obterDadosPessoais() {
@@ -66,10 +58,6 @@ public class Cliente extends Pessoa {
 		setGenero(genero);
 	}
 	
-	public int obterDtNascimento() {
-		return getDtNascimento();
-	}
-	
 	public void exibirDadosPessoais() {
 		System.out.printf("Nome: %s\n", getNome());
 		System.out.printf("Data de Nascimento: %d\n", getDtNascimento());
@@ -88,9 +76,6 @@ public class Cliente extends Pessoa {
 		System.out.println("Telefone: ");
 		int tel = dados.nextInt();
 		setTelefone(tel);
-//		System.out.println("Comprovante de Residência: ");
-//		String comResidencia = dados.next();
-//		setComprovanteResidencia(comResidencia);
 	}
 	
 	public void exibirDadosCliente() {
@@ -98,7 +83,6 @@ public class Cliente extends Pessoa {
 		System.out.printf("Registro do Cliente: %d\n", getRegistro());
 		System.out.printf("E-mail: %s\n", getEmail());
 		System.out.printf("Telefone: %d\n", getTelefone());
-		//System.out.printf(": %s\n", getComprovanteResidencia());
 		
 	}
 }

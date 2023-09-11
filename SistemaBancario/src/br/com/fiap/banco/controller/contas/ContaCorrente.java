@@ -7,8 +7,6 @@ public class ContaCorrente extends Conta {
 	private static final long serialVersionUID = 1L;
 
 	//atributos
-	private double deposito;
-	private double saque;
 	private double saldo;
 	private double chequeEspecial;
 	
@@ -20,32 +18,12 @@ public class ContaCorrente extends Conta {
 		
 	}
 	
-	//método getters and setters
-	public double getDeposito() {
-		return deposito;
-	}
-
-	public void setDeposito(double deposito) {
-		this.deposito = deposito;
-	}
-
-	public double getSaque() {
-		return saque;
-	}
-
-	public void setSaque(double saque) {
-		this.saque = saque;
-	}
+	//Getters and Setters
 	
 	public double getChequeEspecial() {
 		return chequeEspecial = 10;
 	}
 
-
-	/*public void setChequeEspecial() {
-		this.chequeEspecial += 10;
-	}*/
-	
 	public double getSaldo() {
 		return saldo;
 	}
@@ -57,14 +35,11 @@ public class ContaCorrente extends Conta {
 		while (true) {
 			System.out.printf("Olá!\n " + "1 - Deposito.\n " + "2 - Saque.\n " + "3 - Saldo\n " + "4 - Sair.\n ");
 
-			// Instanciar scanner
-
 			System.out.println("Digite sua opção: ");
 			int opcao = op.nextInt();
 
-			// conficional
+			// condicional
 			if (opcao == 1) {
-
 				System.out.println("Deposito: R$ ");
 				double dep = op.nextDouble();
 				setDeposito(dep);
@@ -74,11 +49,10 @@ public class ContaCorrente extends Conta {
 			} else if (opcao == 2) {
 				System.out.println("Saque: R$ ");
 				double sq = op.nextDouble();
-				saque = sq;
-				// setSaque(sq);
+				setSaque(sq);
 
-				if (saldo >= saque) {
-					saldo -= saque;
+				if (saldo >= getSaque()) {
+					saldo -= getSaque();
 					System.out.println("Saque executado: R$ " + sq);
 				} else {
 					System.out.println("Deseja solicitar o cheque especial?");
@@ -88,25 +62,20 @@ public class ContaCorrente extends Conta {
 						requisitarChequeEspecial();
 						System.out.println("Saque executado: R$ " + sq);
 						System.out.println("Cheque Especial: R$ " + "-" + getChequeEspecial());
-						
 					} 
-					
 				}
 
 			} else if (opcao == 3) {
-
 				System.out.printf("Saldo Atual: R$ %.2f\n", getSaldo());
-
 			} else if (opcao == 4) {
 				break;
 			}
 		}
-
 	}
 	
 	public void requisitarChequeEspecial() {
-			saque += getChequeEspecial();
-			saldo -= saque;
+			double valor = getSaque() + getChequeEspecial();
+			saldo -= valor;
 	}
 	
 	
